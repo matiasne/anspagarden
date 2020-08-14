@@ -1,0 +1,35 @@
+
+#inicio .btn {
+	color: #000000 !important;  
+}
+
+/************** jumbotronImages ******************/
+#inicio .jumbotron {
+	background-image: url('http://anpasgarden.com/img/1@2x.jpg');
+}
+
+#clientes .jumbotron {
+	background-image:url('http://anpasgarden.com/img/2@2x.jpg');
+}
+
+#servicios .jumbotron {
+	background-image:url('http://anpasgarden.com/img/3@2x.jpg');
+}
+    
+#contacto .jumbotron {
+	background-image:url('http://anpasgarden.com/img/4@2x.jpg');
+}
+    
+/************** /jumbotronImages ******************/
+
+li {
+	list-style-type:none;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display: block;
+}
+
+#clientes img {
+	width:150px;
+}

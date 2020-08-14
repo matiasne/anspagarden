@@ -1,0 +1,574 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display: block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+li {
+	list-style-type: none;
+}
+
+/************** nav ******************/
+/************** nav ******************/
+.nav a {
+	color: #999;    
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+}
+
+.nav a:hover .nav li {
+	border-top:5px solid #999;
+}
+
+.active {
+	font-style: italic;
+	color: #231F20 !important;
+}
+
+.navbar {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px 0px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px 0px;
+	background-color: white;
+}
+
+.navbar-opacity {
+	background-color:rgba(255,255,255,0.9);    
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+}
+
+.navbar-brand {
+	width: 162px;
+	height: 50px;
+	margin-left: 15px;
+	padding: 10px 0 0;
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar,.nav,.nav li,.nav a {
+        height: 90px;    
+    }
+    
+    .navbar-brand {
+        width: 215px;
+        padding-top: 23px;
+    }
+    
+    .nav a {
+        padding: 0 25px !important;
+        font-size: 1.1em;
+        line-height: 5.5em !important;
+    }
+
+}
+
+.navbar-brand img {
+	width: 100%;
+}
+
+.jumbotron,h1,h2,p {
+	text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-contact,.nav-contact a, .nav-contact span {
+       display:none !important;
+        font-size:1.1em;
+    }
+}
+
+.nav-contact span {
+    padding-right:5px;
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar-collapse ul {
+	float: right;
+}
+
+/*.nav-sep a {
+	color: lightgrey !important;
+	font-size: 1.4em;
+}*/
+
+}
+
+#inicio,#clientes,#servicios,#contacto {
+	background: #fff;
+}
+
+#inicio .container p,#clientes,#servicios,#contacto {
+	z-index: 5;
+}
+
+/************** jumbotron ******************/
+.jumbotron {
+    padding: 12% 0 15% 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	word-wrap: break-word;
+	min-height: 50px;
+    vertical-align:middle;
+}
+
+#inicio .jumbotron {
+    padding:15% 0 12% 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #inicio .jumbotron {
+        padding:21% 0 18% 0;
+    }
+}
+
+.jumbotron {
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+	width: 100%;
+}
+
+.jumbotron h2, .jumbotron h5 {
+	text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.jumbotron h5 {
+    
+}
+
+@media only screen and (max-width: 600px) {
+	.jumbotron h2 {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+	.jumbotron h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+	.jumbotron h2 {
+	   font-size: 42px;
+    }
+}
+
+/************** /jumbotron ******************/
+.col-xs-12 p {
+	padding: 5% 0;
+}
+
+@media only screen and (min-width: 960px) {
+	.col-xs-12 p {
+		font-size: 1.2em;
+	}
+
+}
+
+/************** jumbotronImages ******************/
+#inicio .jumbotron {
+	background: url(http://anpasgarden.com/img/1@2x.jpg) center 50px no-repeat fixed #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 800px) {
+	#inicio .jumbotron {
+        background: url(http://anpasgarden.com/img/1@2x.jpg) center top no-repeat fixed #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	#inicio .jumbotron {
+        background: url(http://anpasgarden.com/img/1.jpg) center 50px no-repeat scroll #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    }
+}
+
+#clientes .jumbotron {
+	background: url(http://anpasgarden.com/img/2@2x.jpg) center top no-repeat fixed #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    #clientes .jumbotron {
+        background: url(http://anpasgarden.com/img/2.jpg) center top no-repeat scroll #fff;
+    
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+}
+
+#servicios .jumbotron {
+	background: url(http://anpasgarden.com/img/3@2x.jpg) center top no-repeat fixed #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    #servicios .jumbotron {
+        background: url(http://anpasgarden.com/img/3.jpg) center top no-repeat scroll #fff;
+    
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+}
+    
+#contacto .jumbotron {
+	background: url(http://anpasgarden.com/img/4@2x.jpg) center top no-repeat fixed #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    #contacto .jumbotron {
+	background: url(http://anpasgarden.com/img/4.jpg) center top no-repeat scroll #fff;
+    
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+}
+    
+/************** /jumbotronImages ******************/
+/************** inicio ******************/
+#inicio .btn {
+	background-color: rgba(255,255,255,0);
+	color: #fff;    
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+	overflow:hidden; 
+	text-transform:uppercase;
+	position:relative;
+}
+
+#inicio .btn:after { 
+	content: ""; 
+	position: absolute; 
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s; 
+	background: none repeat scroll 0 0 rgba(255,255,255,0.15); 
+	height: 0%;
+	left: 50%; 
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	width: 100%;
+	z-index:-1;
+}
+
+#inicio .btn:hover:after { 
+	height: 360%; 
+}
+
+@media only screen and (min-width: 800px) {
+	#inicio .btn {
+		margin-top: 5px;
+	}
+
+}
+
+@media only screen and (min-width: 1080px) {
+	#inicio .btn {
+		margin-top: 15px;
+	}
+	
+	#inicio p {
+		max-width: 680px;
+		margin: 0 auto;
+	}
+
+}
+
+/************** /inicio ******************/
+/************** clientes ******************/
+#clientes .clientes-container {
+	padding: 40px 0;
+}
+
+#clientes ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#clientes li {
+	font-size: 1em;
+	padding: 2.5%;
+	float: left;
+	width: 100%;
+	display: inline-block;
+	margin-left: 0;
+}
+
+#clientes img {
+	width: 40%;
+	display: inline-block;
+	max-width: 148px;
+}
+
+@media only screen and (min-width: 320px) {
+	#clientes img {
+	width: 90%;
+}
+
+}
+
+@media only screen and (min-width: 480px) {
+	#clientes img {
+	width: 80%;
+}
+
+}
+
+.last-client {
+	display: none !important;
+}
+
+@media only screen and (min-width: 800px) {
+	.last-client {
+	display: inherit !important;
+}
+
+}
+
+@media only screen and (min-width: 320px) {
+	#clientes li {
+	width: 33.3%;
+}
+
+}
+
+@media only screen and (min-width: 800px) {
+	#clientes li {
+	width: 25%;
+}
+
+}
+
+@media only screen and (min-width: 1280px) {
+	#clientes ul {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#clientes li {
+	padding: 2%;
+}
+
+#clientes .clientes-container {
+	padding: 20px 0;
+}
+
+}
+
+/************** /clientes ******************/
+/************** servicios ******************/
+#servicios .list {
+	padding: 60px 0;
+}
+
+@media screen and (min-width:800px) {
+	#servicios .list {
+	padding: 80px 0;
+	max-width: 1000px;
+}
+
+}
+
+#servicios ul {
+	padding: 0;
+	margin: 0;
+}
+
+#servicios li {
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 10px 0;
+	text-align: center;
+}
+
+@media screen and (min-width:800px) {
+	#servicios li {
+	font-size: 1.2em;
+}
+
+}
+
+#servicios hr {
+	width: 40%;
+}
+
+@media only screen and (min-width:800px) {
+	#last-hr {
+	display: none;
+}
+
+}
+
+/************** /servicios ******************/
+/************** contacto ******************/
+#contacto ul {
+	padding: 30px 0;
+	margin-bottom: 0;
+}
+
+#contacto a:hover {
+	text-decoration:underline;
+}
+
+#contacto li {
+	text-align: center;
+	padding: 30px 0;
+	float: left;
+	border-bottom: 1px solid lightgrey;
+}
+
+#contacto li:last-child {
+	border-bottom: none;
+}
+
+@media screen and (min-width:800px) {
+	#contacto li {
+	border-bottom: none;
+	padding: 0;
+}
+
+#contacto ul {
+	padding: 6% 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+}
+
+#contacto span[aria-hidden] {
+	color: #385737;
+	margin-right: 7px;
+	font-size: 1.2em;
+	position: relative;
+	top: 2px;
+}
+
+span[aria-hidden] > span {
+	display: none;
+}
+
+@media only screen and (min-width:960px) {
+	#contacto li {
+        font-size: 1.1em;
+    }
+
+    #contacto span[aria-hidden] {
+        font-size: 2em;
+        display: block;
+        padding-bottom: 15px;
+    }
+}
+
+/************** /contacto ******************/
+footer {
+	background-color: #231F20;
+	color: #656565;
+	padding: 5% 0;
+	margin-bottom: 0;
+	min-height: 150px;
+}
+
+@media only screen and (max-width:800px) {
+	footer > div {
+	margin: 15px 0;
+}
+
+}
+
+footer p {
+	margin-bottom: 3px;
+}
+
+footer a {
+	color: #454545;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #656565;
+}
+
+#logo-ft {
+	width: 40px;
+	height: 40px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 15px;
+}
+
+#logo-ft img {
+	width: 100%;
+}
+
+@media only screen and (min-width:800px) {
+	footer {
+	padding: 60px 0 0 0;
+}
+
+.left-ft {
+	float: left;
+}
+
+.left-ft p {
+	text-align: left;
+	margin-left: 21px;
+	margin-top: 3px;
+}
+
+#logo-ft {
+	float: left;
+	width: 25px;
+	height: 30px;
+	margin-bottom: 0px;
+}
+
+#logo-ft img {
+	height: 25px;
+}
+
+.right-ft {
+	float: right;
+	margin-top: 4px;
+	text-align: right;
+}
+
+}
